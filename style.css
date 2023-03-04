@@ -24,7 +24,7 @@ header {
 }
 
 .flex-nav {
-    margin-top: 10px;
+    margin: 15px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -44,8 +44,30 @@ header {
 }
 
 .path {
-    font-family: Arial, serif;
+    font-family: "Arial", serif;
     color: grey;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sub-header2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.sub-header1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media all and (max-width: 1000px) {
