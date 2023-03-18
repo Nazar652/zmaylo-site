@@ -107,7 +107,14 @@ header {
 
 .ingredients {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.ingredients1, .ingredients2 {
+    display: grid;
     grid-template-columns: auto 1fr auto;
+    grid-template-rows: repeat(6, 1em);
+    grid-gap: 10px;
 }
 
 .under {
