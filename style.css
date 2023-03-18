@@ -105,6 +105,15 @@ header {
     margin-left: 30px;
 }
 
+.ingredients {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+.under {
+    border-bottom: 1px solid grey;
+}
+
 
 @media all and (max-width: 1000px) {
     .flex-nav ul {
