@@ -88,11 +88,75 @@ header {
     padding: 10px;
 }
 
+.desc {
+    margin-top: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.chapter {
+    display: flex;
+    font-size: 26px;
+    margin-top: 40px;
+}
+
+.line {
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin-left: 30px;
+}
+
+.ingredients {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.ingredient {
+    display: flex;
+}
+
+.food, .amount {
+    flex-basis: fit-content;
+    flex-grow: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.under {
+    flex-grow: 1;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    margin: 0 15px;
+}
+
+.cooking {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.step {
+    padding: 20px 0;
+    border-top: 1px solid grey;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+.step img {
+    width: 300px;
+}
+
+
+
 @media all and (max-width: 1000px) {
     .flex-nav ul {
         flex-wrap: wrap;
     }
     .flex-nav li {
         flex: 1 1 50%;
+    }
+    .ingredients {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(11, 1fr);
     }
 }
