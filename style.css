@@ -107,7 +107,6 @@ header {
 
 .ingredients {
     display: grid;
-<<<<<<< HEAD
     grid-auto-flow: column;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(6, 1fr);
@@ -129,30 +128,6 @@ header {
     flex-grow: 1;
     border-bottom: 1px solid rgb(231, 231, 231);
     margin: 0 15px;
-=======
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    margin: 20px 0;
-}
-
-.ingredients1, .ingredients2 {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-template-rows: repeat(6, 1em);
-    grid-gap: 10px;
-}
-
-.under {
-    border-bottom: 1px solid grey;
-}
-
-.in-text.l {
-    justify-self: start;
-}
-
-.in-text.r {
-    justify-self: end;
->>>>>>> 3714e576676a1193a9d22615d08ca6a93cb81d8e
 }
 
 .cooking {
