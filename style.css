@@ -21,6 +21,9 @@ body {
 header {
     text-align: center;
     border-bottom: 2px solid #061957;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
 }
 
 .flex-nav {
@@ -91,12 +94,14 @@ header {
 .desc {
     margin-top: 35px;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
 }
 
 .chapter {
     display: flex;
     font-size: 26px;
     margin-top: 40px;
+    flex-wrap: nowrap;
 }
 
 .line {
@@ -137,16 +142,21 @@ header {
 
 .step {
     padding: 20px 0;
-    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
     display: grid;
     grid-template-columns: 300px 1fr;
+    grid-gap: 20px;
 }
 
 .step img {
     width: 300px;
 }
 
-
+.step p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 10px 20px 0 0;
+}
 
 @media all and (max-width: 1000px) {
     .flex-nav ul {
